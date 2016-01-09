@@ -30,9 +30,19 @@ section {
 
 .sandwich-offering {
     margin: 5% auto;
-
     width: 50%;
-    
     border: solid 1px darkgray;
     border-radius: 1em;
 }
+
+
+.left{
+    float:left;
+    width:30%;
+    margin-left: 3%;
+    height: 200px;
+    margin-top: 0;
+
+}
+
+
