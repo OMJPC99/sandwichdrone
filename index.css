@@ -22,6 +22,25 @@ header {
     font-size: 6em;
 }
 
+/* Navigation */
+
+.navbar {
+    background-color: darkgray;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: 0;
+}
+
+.navbar-option {
+
+}
+
+.navbar-logo {
+    height: 40px;
+    float: left;
+}
+
 /* Sections */
 
 section {
@@ -31,9 +50,19 @@ section {
 .sandwich-offering {
     margin: 5% auto;
     padding: 1em;
-
     width: 50%;
-    
     border: solid 1px darkgray;
     border-radius: 1em;
 }
+
+
+.left{
+    float:left;
+    width:30%;
+    margin-left: 3%;
+    height: 200px;
+    margin-top: 0;
+
+}
+
+
