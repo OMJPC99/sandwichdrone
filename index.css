@@ -1,4 +1,6 @@
-
+body {
+    cursor: url("drone_cursor.svg"), auto;
+}
 
 /* Opening Page View */
 
