@@ -3,34 +3,41 @@
  */
 
 var done = 1;
-window.onscroll = function() {scrollHandler()};
+window.onscroll = function () {
+    scrollHandler()
+};
 
 var last = 0;
 
 
-function moveDroneAtPlace(atPlace, toPlaceX, toPlaceY){
+function moveDroneAtPlace(atPlace, toPlaceX, toPlaceY, size) {
 
-    if(done == 0){return;}
-    if (last == atPlace){return;}
+    if (done == 0) {
+        return;
+    }
+    if (last == atPlace) {
+        return;
+    }
     done = 0;
-    //if ((document.body.scrollTop > atPlace || document.documentElement.scrollTop > atPlace) && (document.body.scrollTop < atPlace || document.documentElement.scrollTop < atPlace)) {
-    if (($(document).scrollTop() > atPlace - 50) && ( $(document).scrollTop() < atPlace + 50)) {
-        console.log(atPlace);
-        $( "#drone" ).animate({
+
+    //if ($("#drone").offset().top > toPlaceY - 20 || $("#drone").offset().top < toPlaceY + 20){return;}//put in range
+
+    if (($(document).scrollTop() > atPlace - 75) && ($(document).scrollTop() < atPlace + 75)) {
+        $("#drone").animate({
             left: toPlaceX + "%",
-            top: toPlaceY + "%"
-        }, 1500, function() {
+            top: toPlaceY + "%",
+            width: size + "%"
+        }, 1300, function () {
             last = atPlace;
             done = 1;
         });
-    }else {
+    } else {
         last = atPlace;
         done = 1;
     }
 }
 
-function scrollHandler(){
-    console.log($(document).scrollTop());
-    moveDroneAtPlace(0, 10, 10);
-    moveDroneAtPlace(500, 90, 90);
+function scrollHandler() {
+    moveDroneAtPlace(200, 25, 30, 50);
+    moveDroneAtPlace(50, 25, 30, 50);
 }
