@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
     cursor: url("drone_cursor.svg"), auto;
     font-family: 'Courier New', monospace;
 }
@@ -36,6 +37,9 @@ li a {
 li a .active {
     background-color: #3c3c3c;
     color: #d1d1d1;
+=======
+    /*cursor: url("drone_cursor.svg"), auto;*/
+>>>>>>> origin/master
 }
 
 /* Opening Page View */
@@ -54,8 +58,8 @@ header {
 .page-title {
     text-align: center;
     margin: auto;
-    margin-top: 5%;
-    height: 25%;
+    margin-top: 30px;
+    height: 700px;
     font-family: 'Courier New', monospace;
     font-size: 6em;
 }
@@ -78,9 +82,27 @@ section {
     float:left;
     width:30%;
     margin-left: 3%;
-    height: 200px;
     margin-top: 0;
 
 }
 
+.spacer{
+    width: 100%;
+    height: 20%;
+}
 
+
+#drone {
+    -webkit-animation: pulse 1s ease-in-out infinite alternate;
+    animation: pulse 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes pulse {
+    0% {
+        margin-top:30px;
+    }
+    100% {
+        margin-top:0;
+    }
+}
