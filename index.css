@@ -51,8 +51,29 @@ section {
     height: 20%;
 }
 
+#prop1{
+    position: absolute;
+    top: -7%;
+    left: 20%;
+}
+
+#prop2{
+
+}
+
+#prop3{
+
+}
+
+#prop4{
+
+}
 
 #drone {
+    position: absolute;
+    width:30%;
+    top: 10%;
+    left: 20%;
     -webkit-animation: pulse 1s ease-in-out infinite alternate;
     animation: pulse 1s ease-in-out infinite alternate;
 }
