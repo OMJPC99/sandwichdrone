@@ -1,6 +1,6 @@
 body {
-<<<<<<< HEAD
-    cursor: url("drone_cursor.svg"), auto;
+
+    /*cursor: url("drone_cursor.svg"), auto;*/
     font-family: 'Courier New', monospace;
 }
 
@@ -37,9 +37,6 @@ li a {
 li a .active {
     background-color: #3c3c3c;
     color: #d1d1d1;
-=======
-    /*cursor: url("drone_cursor.svg"), auto;*/
->>>>>>> origin/master
 }
 
 /* Opening Page View */
@@ -91,6 +88,21 @@ section {
     height: 20%;
 }
 
+.sub-title{
+    text-align: center;
+}
+
+.divider-line{
+    height: 2px; width: 100%; margin-bottom: 10px;
+}
+
+.little-logo{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
 #prop1{
     position: absolute;
     top: -7.4%;
@@ -108,11 +120,19 @@ section {
 }
 
 #prop3{
-
+    position: absolute;
+    top: 7.4%;
+    left: 10%;
+    width: 140%;
+    animation: rotating 2s linear infinite;
 }
 
 #prop4{
-
+    position: absolute;
+    top: 7.5%;
+    left: -47%;
+    width: 140%;
+    animation: rotating 2s linear infinite;
 }
 
 #drone {
@@ -133,9 +153,6 @@ section {
         margin-top:0;
     }
 }
-
-
-
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
     from {
