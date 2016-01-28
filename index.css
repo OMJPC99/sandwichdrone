@@ -1,5 +1,42 @@
 body {
-    cursor: url("drone_cursor.svg"), auto;
+
+    /*cursor: url("drone_cursor.svg"), auto;*/
+    font-family: 'Courier New', monospace;
+}
+
+/* Navigation Bar */
+
+.navbar ul {
+    width: 100%;
+    list-style-type: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+    color: black;
+    background-color: white;
+    box-shadow: 0 1em 1em darkgray;
+    z-index: 10;
+}
+
+.navbar li {
+    display: inline;
+    float: right;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a .active {
+    background-color: #3c3c3c;
+    color: #d1d1d1;
 }
 
 /* Opening Page View */
@@ -18,8 +55,8 @@ header {
 .page-title {
     text-align: center;
     margin: auto;
-    margin-top: 5%;
-    height: 25%;
+    margin-top: 30px;
+    height: 700px;
     font-family: 'Courier New', monospace;
     font-size: 6em;
 }
@@ -42,9 +79,110 @@ section {
     float:left;
     width:30%;
     margin-left: 3%;
-    height: 200px;
     margin-top: 0;
 
 }
 
+.spacer{
+    width: 100%;
+    height: 20%;
+}
 
+.sub-title{
+    text-align: center;
+}
+
+.divider-line{
+    height: 2px; width: 100%; margin-bottom: 10px;
+}
+
+.little-logo{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+#prop1{
+    position: absolute;
+    top: -7.4%;
+    left: 10%;
+    width: 140%;
+    animation: rotating 2s linear infinite;
+}
+
+#prop2{
+    position: absolute;
+    top: -7.5%;
+    left: -47%;
+    width: 140%;
+    animation: rotating 2s linear infinite;
+}
+
+#prop3{
+    position: absolute;
+    top: 7.4%;
+    left: 10%;
+    width: 140%;
+    animation: rotating 2s linear infinite;
+}
+
+#prop4{
+    position: absolute;
+    top: 7.5%;
+    left: -47%;
+    width: 140%;
+    animation: rotating 2s linear infinite;
+}
+
+#drone {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 35%;
+    -webkit-animation: pulse 1s ease-in-out infinite alternate;
+    animation: pulse 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes pulse {
+    0% {
+        margin-top:30px;
+    }
+    100% {
+        margin-top:0;
+    }
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
