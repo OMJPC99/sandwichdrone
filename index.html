@@ -1,6 +1,7 @@
 <head>
     <title>Sandwich Drone</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="droneMovement.js"></script>
@@ -13,18 +14,26 @@
 <body>
 <div id="drone">
     <img src="Drone_NoProp.svg">
-    <img id="prop1" src="propeller.svg">
-    <img id="prop2" src="propeller.svg">
-    <img id="prop3" src="propeller.svg">
-    <img id="prop4" src="propeller.svg">
+    <img id="prop1" src="Drone_Wing.svg">
+    <img id="prop2" src="Drone_Wing.svg">
+    <img id="prop3" src="Drone_Wing.svg">
+    <img id="prop4" src="Drone_Wing.svg">
 </div>
 
-<div class="navbar">
-    <ul>
-        <li><a class="nav-link" href="#sandwhiches">Sandwiches</a></li>
-        <li><a class="nav-link" href="#order">Order</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-    </ul>
+<div id="dynamicCollapse" class="navbar">
+    <div class="navbar-header">
+        <a class="navbar-logo" href="#">Logo</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-content">
+            <span class="sr-only">NAV</span>-
+        </button>
+    </div>
+    <div class="navbar-content" id="main-navbar-content">
+        <ul class="nav navbar-nav">
+            <li><a class="nav-link" href="#sandwiches">Sandwiches</a></li>
+            <li><a class="nav-link" href="#order">Order</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+        </ul>
+    </div>
 </div>
 
 <!--<div id="map">-->
@@ -42,9 +51,9 @@
     </div>
 </header>
 
-<section style="margin-top: 0" id="sandwhiches">
+<section style="margin-top: 0" id="sandwiches">
     <section class="left">
-        <img class="little-logo" src="sandwich-logo.svg">
+        <img class="little-logo" src="Logo_Brown.svg">
         <h3 style="text-align: center">Sub-Title</h3>
         <div style="background-color: #0002e2; height: 2px; width: 100%; margin-bottom: 10px;"></div>
         Vivamus interdum mattis est, non sodales risus consectetur egestas. Aliquam tempor quam nibh, et commodo diam
@@ -57,7 +66,7 @@
 
     <section class="left">
 
-        <img class="little-logo" src="sandwich-logo.svg">
+        <img class="little-logo" src="Logo_Gray.svg">
         <h3 class="sub-title">Sub-Title</h3>
         <div class="divider-line" style="background-color: #0002e3;"></div>
 
@@ -70,7 +79,7 @@
 
     </section>
     <section class="left">
-        <img class="little-logo" src="sandwich-logo.svg">
+        <img class="little-logo" src="Logo_Blue.svg">
         <h3 style="text-align: center">Sub-Title</h3>
         <div style="background-color: #0002e2; height: 2px; width: 100%; margin-bottom: 10px;"></div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum gravida consectetur. Curabitur

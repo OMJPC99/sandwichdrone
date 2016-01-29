@@ -15,3 +15,12 @@ $(document).ready(function () {
         })
     })
 });
+
+function autocollapse() {
+    var navbar = $('#dynamicCollapse');
+    navbar.removeClass('collapsed');
+    if (navbar.innerHeight > 50) navbar.addClass('collapsed');
+}
+
+$(document).ready(autocollapse);
+$(window).on('resize', autocollapse);

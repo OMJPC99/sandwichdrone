@@ -4,41 +4,6 @@ body {
     font-family: 'Courier New', monospace;
 }
 
-/* Navigation Bar */
-
-.navbar ul {
-    width: 100%;
-    list-style-type: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* background-color: #333; */
-    color: black;
-    background-color: white;
-    box-shadow: 0 1em 1em darkgray;
-    z-index: 10;
-}
-
-.navbar li {
-    display: inline;
-    float: right;
-}
-
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a .active {
-    background-color: #3c3c3c;
-    color: #d1d1d1;
-}
-
 /* Opening Page View */
 
 header {
