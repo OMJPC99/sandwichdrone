@@ -70,34 +70,34 @@ section {
 
 #prop1{
     position: absolute;
-    top: -7.4%;
-    left: 10%;
-    width: 140%;
-    animation: rotating 2s linear infinite;
+    top: 3%;
+    left: 47%;
+    width: 65%;
+    animation: rotating 1s linear infinite;
 }
 
 #prop2{
     position: absolute;
-    top: -7.5%;
-    left: -47%;
-    width: 140%;
-    animation: rotating 2s linear infinite;
+    top: 2.5%;
+    left: -11%;
+    width: 65%;
+    animation: rotating 1s linear infinite;
 }
 
 #prop3{
     position: absolute;
-    top: 7.4%;
-    left: 10%;
-    width: 140%;
-    animation: rotating 2s linear infinite;
+    top: 47.5%;
+    left: 46%;
+    width: 65%;
+    animation: rotating 1s linear infinite;
 }
 
 #prop4{
     position: absolute;
-    top: 7.5%;
-    left: -47%;
-    width: 140%;
-    animation: rotating 2s linear infinite;
+    top: 46.7%;
+    left: -12%;
+    width: 65%;
+    animation: rotating 1s linear infinite;
 }
 
 #drone {
