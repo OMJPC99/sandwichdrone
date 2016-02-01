@@ -7,7 +7,7 @@ function getLocation() {
     }
 }
 function showPosition(position) {
-    var x = document.getElementById("demo");
+    var x = document.getElementById("location");
     x.innerHTML = "Latitude: " + position.coords.latitude +
         "<br>Longitude: " + position.coords.longitude;
 }
